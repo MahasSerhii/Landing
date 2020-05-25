@@ -1,0 +1,53 @@
+.header{
+  position: fixed;
+  min-width: 100%;
+  max-width: 1440px;
+}
+.header_wrapper{
+  position: relative;
+  display: flex;
+  max-width: 1110px;
+  margin-top: 18px;
+  padding: 0 167px 0 167px;
+  & nav{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  & li{
+    margin-right:60px;
+  }
+  & li a{
+    @extend %fonts_h5;
+  }
+}
+.logo{
+position: relative;
+min-width: 6%;
+max-width: 79px;
+margin: 0 auto;
+padding: 0 20px 0 20px ;
+& img{
+  position: absolute;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+}
+.btn-header{
+  display: flex;
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  background: #111B47;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 55px;
+  margin-left: auto;
+  
+}

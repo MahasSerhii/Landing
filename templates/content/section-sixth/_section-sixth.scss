@@ -1,0 +1,53 @@
+.section-sixth{
+    background: url(../images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position-y: 58px;
+    padding-top: -30px;
+    & .section_wrapper{
+        display: flex;
+        flex-direction: column;
+        background: url(../images/Path.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 30px;;
+        padding-top: 304px;
+        padding-bottom: 210px;
+        justify-content: center;
+        & h3{
+            @extend %fonts_h2;
+            align-self: center;
+        }
+        & p{
+            display: flex;
+            @extend %fonts_h4;
+            max-width: 600px;
+            align-self: center;
+            text-align: center;
+            margin-top: 16px;
+        }
+        & h1{
+            @extend %fonts_h2;
+            align-self: center;
+            margin-top: 35px;
+        }
+        & .small-text{
+            @extend %fonts_h5;
+            margin-top: 60px;
+        }
+        & button{
+            line-height: 18px;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 2px;
+            color: white;
+            width: 300px;
+            margin: 15px auto;
+            padding: 10px 10px;
+            background:$blue_main;
+        }
+    }
+}
+.section_wrapper p:nth-of-type(2){
+    margin-top: 0px;
+}

@@ -1,0 +1,97 @@
+.footer_wrapper{
+    display: flex;
+    padding-top: 68px;
+    padding: 0 167px 0 167px;
+    flex-direction: column;
+    background: #E7ECFF;
+}
+.footer-upper_part{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    & .copyright{
+        @extend %fonts_h5;
+        color: #939EA4;
+    }
+    & button{
+        line-height: 18px;
+        font-weight: 500;
+        font-size: 12px;
+        border-radius: 2px;
+        color: white;
+        width: 109px;
+        padding: 10px 10px;
+        background:$blue_main;
+    }
+}
+.footer-bottom_part{
+    display: flex;
+    padding-bottom: 32px;
+    border-top: 1px solid #CDD1D4;
+    margin-top: 46px;
+    .footer-menu    {
+        display: flex;
+        margin-top: 20px;
+        text-decoration: none;
+        list-style-type: none!important;
+        @extend %fonts_h5;
+         & li a{
+             color: #929ECC;
+             margin-right: 60px;
+         }
+}}
+.footer-logo{
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    & div{
+        padding-left: 35px;
+    }
+}
+.social div:hover{
+    transform: scale(1.2);
+}
+.facebook{
+    min-width: 15px;
+    min-height: 15px;
+    background: url(../images/Facebook.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.linked-in{
+    min-width: 15px;
+    min-height: 15px;
+    background: url(../images/linkedin.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.twitter{
+    min-width: 15px;
+    min-height: 15px;
+    background: url(../images/twitter.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.youtube{
+    min-width: 15px;
+    min-height: 15px;
+    background: url(../images/youtube.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.instagram{
+    min-width: 15px;
+    min-height: 15px;
+    background: url(../images/instagram.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+}
+nav li a:hover{
+    font-weight: 800;
+}

@@ -1,0 +1,31 @@
+.section-fifth_left-side{
+    width: 50%;
+    margin-top: 135px;
+    padding-bottom: 115px;
+    & img{
+        max-width: 100%;
+    }
+}
+.section-fifth_right-side{
+    width: 50%;
+    margin-top: 170px;
+    & h3{
+        @extend %fonts_h2;
+    }
+    & p{
+        @extend %fonts_h3;
+        margin-top: 16px;
+        padding-bottom: 44px;
+    }
+    & button{
+        line-height: 18px;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        padding: 10px 10px;
+        background:$blue_main;
+        cursor: pointer;
+    }
+}
