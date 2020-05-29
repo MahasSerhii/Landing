@@ -1,0 +1,120 @@
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+@media only screen and (max-device-width: 1024px) {
+  .header-burger_menu {
+    margin: 18px 0px;
+    position: relative;
+    text-align: start;
+    height: 40px;
+  }
+  #header-burger {
+    display: none;
+  }
+  .for_header-burger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+  }
+  .burger-line {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 35px;
+    height: 3px;
+    background-color: $blue_main;
+    transition: 0.5s all;
+  }
+
+  .second,
+  .third {
+    top: 18px;
+  }
+
+  .fourth {
+    top: 28px;
+  }
+  .main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(30%);
+    max-height: 0px;
+    font-size: 0px;
+    transition: 0.5s all;
+    overflow: hidden;
+  }
+
+  #header-burger:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px;
+  }
+
+  #header-burger:checked ~ .first {
+    display: none;
+  }
+
+  #header-burger:checked ~ .second {
+    transform: rotate(45deg);
+  }
+
+  #header-burger:checked ~ .third {
+    transform: rotate(-45deg);
+  }
+
+  #header-burger:checked ~ .fourth {
+    display: none;
+  }
+  .btn-header {
+    height: 40px;
+    align-self: center;
+  }
+  .section-first_btns {
+    padding-bottom: 100px;
+  }
+  .section-second .section_wrapper {
+    display: flex;
+    flex-direction: column;
+    & .section-second_right-side {
+      display: none;
+    }
+  }
+  .section-second_left-side {
+    max-width: 100%;
+    & h3 {
+      margin-top: 100px;
+    }
+    & .section-second_text-card {
+      margin-top: 20px;
+      &.first,
+      .second {
+        width: 50%;
+      }
+    }
+  }
+  .section-third .section_wrapper {
+    & .section-third_left-side,
+    .section-third_right-side {
+      margin-top: 0px;
+    }
+  }
+  .section-forth_right-side {
+    margin-top: 100px;
+  }
+  .section-fifth_right-side {
+    margin-top: 120px;
+  }
+}
+
+// @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+// }
+// @media only screen and (max-width: 320px) {
+// }

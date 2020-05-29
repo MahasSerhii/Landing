@@ -94,10 +94,10 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
-  button:hover {
-    transform: scale(1.1);
-  }
-  nav li a:hover {
-    font-weight: 800;
-  }
+}
+button:hover {
+  transform: scale(1.1);
+}
+nav li a:hover {
+  font-weight: 800;
 }

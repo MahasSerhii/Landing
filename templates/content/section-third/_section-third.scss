@@ -1,19 +1,19 @@
-.section-third_left-side{
-    width: 50%;
-    margin-top: 123px;
-    padding-bottom: 110px;
-    & img{
-        max-width: 100%;
-    }
+.section-third_left-side {
+  width: 50%;
+  margin-top: 123px;
+  padding-bottom: 110px;
+  & img {
+    max-width: 100%;
+  }
 }
-.section-third_right-side{
-    width: 50%;
-    margin-top: 172px;
-    & h3{
-        @extend %fonts_h2;
-    }
-    & p{
-        @extend %fonts_h3;
-        margin-top: 16px;
-    }
+.section-third_right-side {
+  width: 50%;
+  margin-top: 172px;
+  & h3 {
+    @extend %fonts_h2;
+  }
+  & p {
+    @extend %fonts_h3;
+    margin-top: 16px;
+  }
 }
